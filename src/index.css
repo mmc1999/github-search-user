@@ -1,0 +1,8 @@
+body {
+    background-color: #F6F8FF;
+    padding: 20px;
+    font-family: "Space Mono",monospace;
+  }
+  body.dark {
+    background-color: #141D2F;
+  }

@@ -1,0 +1,159 @@
+.sectionCard {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px #b1b1b1;
+}
+.sectionCardDark {
+    background-color: #1E2A47;
+    box-shadow: none;
+}
+.primerDiv {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+}
+.divDatosUsuario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.divDatosUsuario > * {
+    margin: 0%;
+}
+.nombre {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2b3442;
+}
+.nombreDark {
+    color: white;
+}
+.user {
+    color: #0079ff;
+    font-size: 12px;
+}
+.joined {
+    color: #697c9a;
+    font-size: 12px;
+    font-weight: 500;
+}
+.octocat {
+    width: 70px;
+    height: 100%;
+    border-radius: 50%;
+}
+.divBiography {
+    padding: 10px 0px;
+}
+.biography {
+    opacity: 0.60;
+    font-size: 14px;
+    font-weight: 600;
+}
+.biographyDark {
+    color: white;
+}
+.divStatistics {
+    background-color: #f6f8ff;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.divStatisticsDark {
+    background-color: #141D2F;
+}
+.infoStatic {
+    color: #4b6a9b;
+    font-size: 10px;
+    margin: 0%;
+}
+.infoStaticDark {
+    color:white;
+}
+.infoVariable {
+    text-align: center;
+    margin: 0%;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #2b3442;
+}
+.infoVariableDark {
+    color: white;
+}
+.divDatos {
+    margin-top: 20px;
+}
+.divDatos div {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.datoFijo {
+    color: #4b6a9b;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.datoFijoDark {
+    color: white;
+    
+}
+.datoFijoNada {
+    opacity: 0.6;
+}
+.imgDark {
+    filter: contrast(0.6);
+}
+@media screen and (min-width:800px) {
+    .divDatosUsuario {
+        display: grid;
+        grid-template-areas:
+        "primera segunda"
+        "tercera segunda";
+        grid-template-rows: 22px;
+    }
+    .primerDiv {
+        grid-template-columns: 120px 1fr;
+    }
+    .octocat {
+        width: 120px;
+    }
+    .nombre {
+        grid-area: primera;
+        font-size: 22px;
+    }
+    .user {
+        grid-area: tercera;
+        font-size: 15px;
+    }
+    .joined {
+        grid-area: segunda;
+        text-align: right;
+        font-size: 13px;
+    }
+    .divBiography, .divStatistics, .divDatos  {
+        margin-left: 130px;
+    }
+    .divBiography {
+        padding-top: 0px;
+    }
+    .biography {
+        margin-top: 0%;
+    }
+    .divDatos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .infoStatic {
+        font-size: 13px;
+    }
+    .infoVariable {
+        text-align: left;
+    }
+}
